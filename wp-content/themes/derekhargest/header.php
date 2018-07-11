@@ -16,6 +16,13 @@
     gtag('config', 'UA-24574093-3');
   </script>
 
+  <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/assets/img/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+
+  <meta property="og:description"        content="Freelance Web Developer working with agencies, start-ups, and large companies to bring great ideas to the web." />
+
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
