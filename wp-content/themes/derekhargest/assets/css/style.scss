@@ -1,0 +1,48 @@
+/**!
+Theme Name: DerekHargestTheme
+Theme URI: http://derekhargest.com
+Description: A theme for Derek Hargest's portfolio.
+Version: 1.0
+Author: Derek Hargest
+Author URI: http://derekhargest.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: gulp, boilerpate
+Text Domain: DHARGEST
+*/
+
+/* ----------------------------------------------------------------------------
+ * Mixins & Variables
+ * ------------------------------------------------------------------------- */
+@import "partials/mixins";
+@import "partials/variables";
+
+/* ----------------------------------------------------------------------------
+ * Normalize & Santize
+ * ------------------------------------------------------------------------- */
+@import "vendors/normalize";
+
+/* ----------------------------------------------------------------------------
+ * Structure
+ * ------------------------------------------------------------------------- */
+@import "partials/structure";
+
+@import "partials/typography";
+
+/* WPCore */
+@import "partials/wpcore";
+
+/* Base */
+@import "partials/base";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/footer";
+@import "partials/page";
+@import "vendors/featherlight";
+
+@import "partials/home";
+@import "partials/work";
+@import "partials/blog";
+@import "partials/content-blocks";
+@import "partials/portfolio-items";
+@import "partials/animate";

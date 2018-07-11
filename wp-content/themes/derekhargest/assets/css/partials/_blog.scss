@@ -1,0 +1,20 @@
+.blog-entry-preview{
+  @include span(4 of 12);
+  &:nth-child(3){
+    @include span(4 of 12 last)
+  }
+}
+
+.blog-entry-preview {
+  header{
+    a{
+      text-decoration: none;
+    }
+  }
+}
+
+.blog-list{
+  .main-intro p{
+    @include span(9 of 10);
+  }
+}

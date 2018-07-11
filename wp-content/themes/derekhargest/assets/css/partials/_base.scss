@@ -1,0 +1,394 @@
+body{
+  background: $c-bg;
+}
+
+p{
+  margin-bottom: $spacing-1;
+}
+
+a:focus{
+  outline: none;
+}
+
+a:-webkit-any-link{
+  color: $c-primary;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+button, .wpcf7-submit{
+  border: $border-thick;
+  color: $c-primary;
+  font-family: $font-stack-sans;
+  font-weight: 800;
+  font-size: 1em;
+  padding: $spacing-half;
+  margin-right: $spacing-half;
+  background: transparent;
+  letter-spacing: -1px;
+  transition: all 200ms ease-in-out;
+  margin-bottom: $spacing-1;
+  &:hover{
+    background: $c-primary;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.wpcf7-text, .wpcf7-textarea{
+  border: 3px solid $c-primary;
+  margin-top: 0;
+  background: $c-bg;
+  font-family: $font-stack-sans;
+  font-weight: 600;
+  &:focus{
+    outline: none;
+  }
+}
+
+.wpcf7-textarea{
+  height: 5em;
+}
+
+.form-label{
+  padding-bottom: 5px;
+  display: block;
+}
+
+.wpcf7-form{
+  margin-top: $spacing-2;
+}
+
+.wpcf7-form p{
+  margin-bottom: $spacing-half;
+}
+
+.wpcf7-submit{
+  margin-top: 0;
+}
+
+.about-image{
+  @include span(4 of 12);
+}
+
+.about-img-wrap{
+  @include span(5 of 12 last);
+}
+.about-content{
+  @include span(12 of 12);
+  img{
+    @include span(5 of 12);
+    margin: 25px 40px 30px 0;
+  }
+}
+
+
+
+.split-sidebar{
+  @include span(12 of 12);
+}
+
+.split-main{
+  @include span(12 of 12);
+  .svg-inline--fa{
+    float: none;
+    display: block;
+    margin: 15px auto;
+  }
+  svg{
+    font-size: 40px !important;
+    margin-bottom: 15px;
+    margin-right: 10px;
+  }
+  h2{
+    font-size: var(--step-up-1);
+    line-height: 1.75em;
+    float: none;
+    text-align: center;
+  }
+}
+
+.contact-item{
+  @include span(12 of 12);
+}
+
+.inline-link{
+  transition: all 250ms ease;
+  text-decoration: underline;
+  color: $c-primary;
+  display: inline-block;
+  line-height: normal;
+  &:hover{
+    // color: $c-secondary;
+  }
+}
+
+textarea{
+  width: 100%;
+}
+
+.after-colon{
+  &:after{
+    content: "\003A";
+    color: $c-secondary;
+    font-size: .89em;
+    margin-left: 1px;
+
+  }
+}
+
+.before-colon{
+  &:before{
+    content: "\003A";
+    color: $c-secondary;
+    font-size: .75em;
+    margin: 0 7px;
+    line-height: .75em;
+    position: relative;
+    top: -.25rem;
+
+  }
+}
+
+.gallery-link{
+  @include headings;
+  font-size: 1.5em;
+  display: block;
+  color: $c-bg;
+  background: $c-primary;
+  padding: 7px 12px;
+  text-align: center;
+  width: auto;
+  float: right;
+  border-radius: 10px;
+  margin-top: 0;
+  position: absolute;
+  bottom: 10px;
+  margin-bottom: 0 !important;
+  right: 10px;
+  opacity: 0.8;
+}
+
+.highlights .inline-link{
+  font-size: var(--step-up-2);
+  @include headings;
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+
+.portfolio-item-image:hover .gallery-link{
+  opacity: 1;
+}
+
+span.wpcf7-not-valid-tip{
+  color: $c-secondary;
+  font-size: var(--step-down-2);
+  font-weight: 600;
+  margin-top: $spacing-1;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+  border: $c-primary 3px solid;
+  font-family: $font-stack-sans;
+  color: $c-primary;
+  font-weight: 600;
+  padding: 15px;
+  letter-spacing: -.05em;
+  text-align: center;
+  margin-left: 0;
+  &:before{
+    content: "!";
+    display: block;
+    font-size: 45px;
+    font-weight: 900;
+    color: $c-secondary;
+    margin: 0 0 10px 0;
+  }
+}
+
+.about-image{
+  width: 100%;
+  float: left;
+  img{
+
+    @include span(8 of 12);
+    margin: 0 auto;
+    float: none;
+    margin: 45px auto;
+  }
+}
+
+
+@media (min-width: 770px){
+  .inline-link{
+    padding: 1px 7px;
+    border: 2px solid $c-primary;
+    margin-right: 3px;
+    background: $c-bg;
+    background: linear-gradient(to top, $c-bg 50%, $c-primary 50%);
+    background-size: 100% 203%;
+    background-position: 99% bottom;
+    transition: background-position 0.5s ease;
+    transition: all 200ms ease;
+    box-shadow: -5px 5px 0px rgba(72, 74, 179, 0.5);
+    text-decoration: none;
+    box-sizing: border-box;
+    &:hover{
+      background-position: top;
+      color: $c-bg;
+    }
+    &:active{
+      position: relative;
+      top: 3px;
+      right: 3px;
+      box-shadow: none;
+      transition: all 0ms;
+    }
+  }
+  .about-image{
+    @include span(5 of 12);
+    margin: 30px 45px 30px 0;
+    img{
+      margin: 0;
+      width: 100%;
+    }
+   
+  }
+}
+
+@media (min-width: 960px){
+  .split-main{
+    @include span(7 of 12 last);
+    flex: 1;
+    margin-top: 65px;
+    .svg-inline--fa{
+      float: left;
+      margin-right: 15px;
+      margin-top: 7px;
+    }
+    h2{
+      font-size: var(--step-up-3);
+      line-height: 1.75em;
+      float: left;
+    }
+  }
+  .split-sidebar{
+    @include span(5 of 12);
+  }
+  .contact-container{
+    position: relative;
+    display: flex;
+  }
+  .contact-item{
+    float: left;
+    @include span(10 of 12);
+  }
+}
+
+
+
+.resume{
+  background: #fff;
+  padding: $spacing-4 $spacing-3 $spacing-3;
+  float: left;
+  box-shadow: -3px 6px 5px #ccc;
+  margin-bottom: $spacing-2;
+  margin-top: $spacing-2;
+  @media (min-width: 2000px){
+      padding: 6.45rem 8rem;
+  }
+  p, li{
+    color: #393939;
+    font-size: var(--step-up-2);
+
+  }
+  ul{
+    padding-left: $spacing-2;
+  }
+  li{
+    margin-bottom: $spacing-half;
+  }
+  h2{
+    margin-top: $spacing-2;
+  }
+  h4{
+    font-size: var(--step-up-2);
+    line-height: var(--step-up-1);
+    font-weight: 900;
+  }
+  h4.roles{
+    margin-top: $spacing-1;
+    margin-left: $spacing-1;
+  }
+  h4.request{
+    text-align: center;
+    margin-top: $spacing-4;
+
+
+    font-size: var(--step-up-1);
+
+    font-weight: 800;
+  }
+  h3{
+    font-family: $font-stack-serif;
+    letter-spacing: normal;
+    font-size: var(--step-up-1);
+    color: #393939;
+    margin-top: 5px;
+  }
+  span{
+    font-family: $font-stack-serif;
+    letter-spacing: normal;
+    font-size: var(--step-up-1);
+    color: #393939;
+    margin-left: $spacing-1;
+    font-weight: 800;
+  margin-top: 5px;
+  display: block;
+  font-style: italic;
+
+  }
+}
+
+.resume-heading{
+  margin-bottom: $spacing-3;
+}
+
+.page-template-template-resume .main-intro{
+  display: none;
+}
+
+@media (max-width: 530px){
+  .resume{
+    p, h1, h2, h3, h4, span, li{
+      text-align: center;
+    }
+    ul{
+      padding-left: 0;
+      list-style: none;
+    }
+    li:before{
+      content: ".";
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+      color: $c-secondary;
+      font-size: 85px;
+      margin-bottom: 15px;
+    }
+    h1{
+      font-size: 34px;
+      line-height: normal;
+      margin-bottom: 15px;
+    }
+    h4.roles{
+      margin-left: 0;
+    }
+  }
+}

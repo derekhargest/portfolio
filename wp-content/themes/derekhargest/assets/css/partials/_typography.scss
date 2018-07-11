@@ -1,0 +1,207 @@
+:root {
+  --step-up-9: 8.075em;
+  --step-up-9: 6.843326em;
+  --step-up-8: 4.75231em;
+  --step-up-7: 3.99805em;
+  --step-up-6: 2.8284em;
+  --step-up-5: 2.3784em;
+  --step-up-4: 2em;
+  --step-up-3: 1.681em;
+  --step-up-2: 1.4142em;
+  --step-up-1: 1.1892em;
+  /* baseline: 1em */
+  --step-down-1: 0.8408em;
+  --step-down-2: 0.7071em;
+  --step-down-3: 0.5946em;
+  --step-down-4: 0.5em;
+  --step-down-5: 0.42044em;
+}
+
+html {
+  font-family: serif;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  color: $c-primary;
+  font-size: 1em;
+}
+
+/* Copy & Lists */
+p, address, input {
+  font-family: $font-stack-serif;
+  font-size: var(--step-up-1);
+  color: $c-primary;
+  line-height: 1.25em;
+  margin-top: $spacing-1;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+a{
+  margin-top: 0;
+  text-decoration: none;
+  &:visited{
+    color: $c-primary;
+  }
+}
+ul,
+ol {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+ul li,
+ol li {
+  line-height: 1.5rem;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+blockquote {
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+address{
+  font-style: normal;
+  margin-top: 0;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  /* Change heading typefaces here */
+  font-family: $font-stack-sans;
+  margin: 0;
+  line-height: 2rem;
+  font-weight: 800;
+}
+h1 {
+  line-height: 3.7rem;
+  letter-spacing: -.05em;
+  font-size: var(--step-up-6);
+}
+h2 {
+  font-size: var(--step-up-4);
+  line-height: 1em;
+  letter-spacing: -.040em;
+}
+.split-main .svg-inline--fa{
+  font-size: var(--step-up-3);
+  float: left;
+  line-height: 1em;
+  margin-top: 5px;
+}
+.split-main a{
+  text-decoration: underline;
+}
+h3 {
+  font-size: var(--step-up-3);
+  letter-spacing: -.05em;
+}
+h4 {
+  font-size: 0.707rem;
+}
+h5 {
+  font-size: 0.4713333333333333rem;
+}
+h6 {
+  font-size: 0.3535rem;
+}
+label{
+  font-weight: 800;
+  font-family: $font-stack-sans;
+  letter-spacing: -.05em;
+}
+
+.wpcf7-text, .wpcf7-textarea{
+  letter-spacing: -.05em;
+  font-size: var(--step-down-1) !important;
+  padding: 10px !important;
+  color: $c-primary;
+}
+
+.main-navigation.mobile .slicknav_nav li a{
+  letter-spacing: -.05em;
+}
+
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0;
+  line-height: 33px;
+}
+/* Code blocks */
+code {
+  vertical-align: bottom;
+}
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem;
+}
+/* Hug the block above you */
+.hug {
+  margin-top: 0;
+}
+
+.tag{
+  font-size: var(--step-down-2);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  line-height: 1em;
+  padding: 5px;
+  text-align: left;
+}
+
+.tag-list{
+  margin-top: $spacing-1;
+  a{
+    float: left;
+    background: $c-secondary;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-right: 7px;
+    padding: 7px;
+  }
+  span{
+    @extend .tag;
+    float: left;
+    line-height: 1.4em;
+  }
+}
+
+@media (min-width: 530px){
+  html {
+    font-family: serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  p, address{
+    line-height: var(--step-up-2);
+    font-size: var(--step-up-2);
+  }
+}
+
+@media (min-width: 960px){
+  p, address{
+    line-height: var(--step-up-2);
+    font-size: var(--step-up-3);
+  }
+  .page-header .topline{
+    line-height: 1em;
+    font-size: var(--step-up-8);
+  }
+}

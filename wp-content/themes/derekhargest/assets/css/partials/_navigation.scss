@@ -1,0 +1,288 @@
+#menu-location{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: $c-primary;
+  }
+  
+.main-navigation-wrap{
+    z-index: 20;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    .container{
+        display: flex;
+        flex: 1;
+    }
+}
+
+.main-navigation{
+    display: none;
+    width: 100%;
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        a{
+            margin-left: 2.75rem;
+            text-decoration: none;
+            font-weight: 700;
+            color: $c-primary;
+            padding-bottom: 5px;
+        }
+    &.desktop ul.menu{
+        margin-bottom: 0;
+        margin-top: 1.25rem;
+    }
+}
+
+.main-navigation.mobile{
+    .menu{
+        display: none;
+    }
+}
+
+#nav-toggle{
+    position: absolute;
+    top: 48px;
+    float: right;
+    z-index: 15;
+    margin: 0;
+    padding: 15px 35px 20px 0;
+    z-index: 1200;
+}
+
+.slicknav_nav{
+    z-index: 10;
+    padding: 188px 0 120px 0;
+    margin: 0;
+    li{
+        width: 100%;
+        text-align: left;
+        &:hover{
+            background: darken( $c-primary, 10% );
+        }
+        a{
+        text-align: center;
+        font-size: var(--step-up-6);
+        font-family: $font-stack-sans;
+        font-weight: 800;
+        line-height: var(--step-up-4);
+        color: $c-bg;
+        letter-spacing: -.05em;
+        
+        }
+    }
+}
+
+
+.slicknav_btn {
+    display: none !important;
+    position: relative;
+    z-index: 20;
+      display: block;
+      vertical-align: middle;
+      float: right;
+      padding: 0.438em 0.625em 0.438em 0.625em;
+      line-height: 1.125em;
+      cursor: pointer;
+      .slicknav_icon-bar + .slicknav_icon-bar {
+          margin-top: 0.188em;
+      }
+  }
+  .slicknav_menu {
+    *zoom: 1;
+    
+      .slicknav_menutxt {
+          display: block;
+          line-height: 1.188em;
+          float: left;
+      }
+      .slicknav_icon {
+      display: none;
+          float: left;
+          width: 1.125em;
+          height: 0.875em;
+          margin: 0.188em 0 0 0.438em;
+          &:before { // Firefox Mobile v42 bugfix
+              background: transparent;
+              width: 1.125em;
+              height: 0.875em;
+              display: block;
+              content: "";
+              position: absolute;
+          }
+      }
+      .slicknav_no-text {
+          margin: 0;
+      }
+      .slicknav_icon-bar {
+          display: block;
+          width: 1.125em;
+          height: 0.125em;
+          -webkit-border-radius: 1px;
+          -moz-border-radius: 1px;
+          border-radius: 1px;
+          -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      }
+      &:before {
+          content: " ";
+          display: table;
+      }
+      &:after {
+          content: " ";
+          display: table;
+          clear: both;
+      }
+  }
+  .slicknav_nav {
+    clear: both;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+      ul {
+          display: block;
+      }
+      li {
+          display: block;
+      }
+      .slicknav_arrow {
+          font-size: 0.8em;
+          margin: 0 0 0 0.4em;
+      }
+      .slicknav_item {
+          cursor: pointer;
+          a {
+              display: inline;
+          }
+      }
+      .slicknav_row {
+          display: block;
+      }
+      a {
+          display: block;
+          margin: 0 auto;
+      }
+      .slicknav_parent-link a {
+          display: inline;
+      }
+  }
+  .slicknav_brand {
+      float: left;
+  } 
+  
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 4px;
+    width: 30px;
+    background: $c-primary;
+    position: absolute;
+    display: block;
+    content: '';
+  }
+  #nav-toggle span:before {
+    top: -8px;
+  }
+  #nav-toggle span:after {
+    bottom: -8px; 
+  }
+  
+  #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 200ms ease-in-out;
+  }
+  #nav-toggle.active span {
+    background-color: transparent;
+  }
+  #nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+    background: $c-bg;
+  }
+  .home #nav-toggle.active span:before, .home #nav-toggle.active span:after {
+    top: 0;
+    background: $c-bg;
+  }
+  #nav-toggle.active span:before {
+    transform: rotate(45deg);
+  }
+  #nav-toggle.active span:after {
+    transform: rotate(-45deg);
+  }
+
+@media (min-width: 530px){
+    .main-navigation.mobile .slicknav_nav li a{
+        font-size: 6em;
+    }
+    .slicknav_nav{
+        padding: 197px 0 120px 0;
+        li{
+            padding-left: $spacing-2;
+            padding-right: $spacing-2;
+            box-sizing: border-box;
+            a{
+                text-align: left;
+            }
+        } 
+    }
+    .home .slicknav_nav{
+        padding: 169px 0 100px 0;
+    }
+    .home #nav-toggle{
+        top: 100px;
+    }
+    #nav-toggle{
+        top: 58px;
+    }
+}
+
+@media (min-width: 960px){
+    .home #nav-toggle{
+        top: 105px;
+    }
+    #nav-toggle.active span {
+       background-color: transparent;
+    }
+    .slicknav_nav li a{
+        text-align: right;
+        font-size: var(--step-up-7);
+    }
+    .slicknav_nav{
+       padding: 252px 2.699rem 120px 2.699rem;
+    }
+    .home{
+        .header{
+            .slicknav_btn{
+                color: #fff;
+            }
+            .slicknav_nav{
+                padding: 288px 0 120px 0;
+            }
+        }
+        #nav-toggle.active span {
+            background-color: transparent;
+        }
+    }
+    .single-portfolio_item .slicknav_nav{
+        padding-top: 260px;
+    }
+}
+
+@media (min-width: 1140px){
+    .slicknav_nav{
+        padding: 325px 0 120px 0;
+    }
+    #nav-toggle{
+        top: 100px;
+    }
+    .home{
+        #nav-toggle{
+            top: 187px;
+        }
+    } 
+}

@@ -1,0 +1,222 @@
+.topline{
+    font-size: 3.5em;
+    line-height: 1em;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .page-header{
+    @include span(12 of 12);
+    margin: $spacing-1 0 $spacing-2;
+    .topline{
+      @include span(12 of 12);
+    }
+  }
+
+  .items .page-header .topline{
+    @include span(12 of 12);
+  }
+
+  .work-item-title .page-header{
+    margin-bottom: 0;
+  }
+
+  .main-intro.items{
+    display: none;
+  }
+
+  .page-header h2{
+    font-family: $font-stack-serif;
+    font-weight: 200;
+    // font-size: var(--step-up-4);
+    font-size: var(--step-up-3);
+    margin-top: $spacing-3;
+    letter-spacing: normal;
+    line-height: 1.25em;
+    width: 100%;
+    float: left;
+
+  }
+
+  .page-content{
+    @include span(8 of 12 last);
+    margin-top: $spacing-2;
+  }
+
+  .breadcrumb{
+    float: left;
+    width: 100%;
+      span{
+        font-family: $font-stack-serif;
+        font-style: italic;
+        color: #fff;
+        font-size: var(--step-up-3);
+        float: left;
+        &:before{
+          content: "\2022";
+          display: block;
+          margin: 0 8px;
+          float: left;
+          color: $c-secondary;
+        }
+        &:first-child{
+          &:before{
+            display: none;
+          }
+        }
+      }
+  }
+  
+.main-intro.items, .main-intro.pages{
+    width: 100%;
+    float: left;
+    padding: $spacing-1 0 $spacing-1 0;
+    background-size: cover;
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(242, 83, 230, 0.524);
+    }
+    .container{
+        position: relative;
+    }
+    h1{
+        line-height: 1em;
+        margin-top: 0;
+        color: #fff;
+      }
+    .topline{
+      font-size: 60px;
+    }
+    .breadcrumb{
+      text-align: center;
+      font-size: var(--step-down-3);
+      margin-top: 20px;
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      span{
+        font-weight: 600;
+      }
+    }
+}
+
+.main-intro.pages{
+  .topline{
+    margin-top: $spacing-1;
+  }
+}
+
+.wpcf7-text, .wpcf7-textarea{
+
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+.main-intro.items.no-hero, .main-intro.pages.no-hero{
+  &:before{
+    background: $c-bg;
+  }
+ .topline{
+   color: $c-primary;
+ }
+ .breadcrumb span{
+   color: $c-primary;
+ }
+ 
+}
+
+.about-wrap{
+  @include span(12 of 12);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-top: $spacing-3;
+}
+
+@media (min-width: 530px){
+  .page-template-template-about .topline{
+    line-height: 1em;
+  }
+  .main-intro.items .topline, .main-intro.pages .topline{
+    font-size: 4.5rem;
+    margin-top: $spacing-2;
+  }
+  
+  .portfolio-item-info .portfolio-item-info-title p{
+    text-align: left;
+  }
+  .portfolio-item-info h1{
+    text-align: left;
+  }
+  .portfolio-item-info-title{
+    margin-top: $spacing-1;
+  }
+
+.main-intro.pages{
+  padding: 0 0 0 0;
+}
+}
+
+@media (min-width: 960px){
+  .main-intro.items .topline{
+    font-size: 6em;
+  }
+  .main-intro.pages .topline{
+    font-size: 6rem;
+  }
+  .main-intro.items{
+    margin-bottom: $spacing-4;
+  }
+  .breadcrumb span{
+    font-size: var(--step-up-3);
+  }
+  .page-header{
+    @include span(11 of 12);
+    .topline{
+      font-size: var(--step-up-8);
+    }
+    h2{
+      @include span(10 of 12);
+      font-size: var(--step-up-4);
+      line-height: 1.35em;
+    }
+  }
+  .main-intro.items, .main-intro.pages{
+    padding: $spacing-5 0 $spacing-2 0;
+    .topline{
+      text-align: left;
+    }
+    .breadcrumb{
+      text-align: left;
+      margin-top: $spacing-half;
+      
+      span{
+        font-size: var(--step-up-4);
+        font-weight: 600;
+      }
+    }
+    
+}
+.main-intro.pages{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.main-intro.items .breadcrumb, .main-intro.pages .breadcrumb{
+  justify-content: flex-start;
+}
+}
+
+@media (min-width: 1400px){
+  .page-header{
+    h2{
+      font-size: var(--step-up-5);
+    }
+  }
+}
