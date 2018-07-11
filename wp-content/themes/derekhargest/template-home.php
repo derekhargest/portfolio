@@ -8,7 +8,7 @@
       <header class="main-header">
         <div class="intro-hero__title">
           <h1 class="topline">Hello! <br/>I'm Derek Hargest</h1>
-          <p>I'm a creative front-end developer from Baltimore, MD. I focus on the intersection of design and technology to create interesting and memorable user expierences.</p>       
+          <p>I'm a creative front-end developer from Baltimore, MD. I focus on the intersection of design and technology to create interesting and memorable user experiences.</p>       
           <div class="platform-list">
             <p>I work on these platforms:</p>
             <ul>
