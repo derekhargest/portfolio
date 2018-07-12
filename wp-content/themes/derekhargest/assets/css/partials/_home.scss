@@ -76,6 +76,7 @@
     width: auto !important;
     margin-top: 0 !important;
     margin-bottom: $spacing-1 !important;
+    text-align: center;
   }
   ul{
     list-style: none;
@@ -184,6 +185,9 @@
   }
   .platform-list{
     margin-bottom: 0;
+    p{
+      text-align: left;
+    }
     ul{
       margin-top: 0;
     }
