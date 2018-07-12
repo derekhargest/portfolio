@@ -16,7 +16,7 @@
     gtag('config', 'UA-24574093-3');
   </script>
 
-  <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/assets/img/og-image2.jpg">
+  <meta property="og:image" content="<?php echo bloginfo('template_directory'); ?>/assets/img/og-image3.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="500">
   <meta property="og:image:height" content="500">
