@@ -81,7 +81,7 @@
             </ul>
           </div>
           <p>I'm currently <span class="availability">available</span> to take on new projects.</p>
-          <p>Feel free to take a look at some of my <a href="<?php echo site_url(); ?>/work" class="inline-link" id="inline-link">work</a>, read a little <a href="<?php echo site_url(); ?>/about" class="inline-link">about me</a> or drop me a <a href="<?php echo site_url(); ?>/contact" class="inline-link">line</a>, i'd love to hear from you.</p>
+          <p>Feel free to take a look at some of my <a href="<?php echo site_url(); ?>/work" class="inline-link" id="inline-link">work</a>, read a little <a href="<?php echo site_url(); ?>/about" class="inline-link">about me</a> or drop me a <a href="<?php echo site_url(); ?>/contact" class="inline-link">line</a>, I'd love to hear from you.</p>
         </div>
       </header>
     </div>

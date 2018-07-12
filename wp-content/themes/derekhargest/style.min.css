@@ -251,9 +251,9 @@ html.with-featherlight{overflow:hidden}
 .more-link{box-sizing:border-box;width:100%;font-size:var(--step-up-3);font-weight:900;font-family:"Montserrat",sans-serif;margin-top:1.35rem;text-align:center;display:inline-block;border:3px solid #484ab3;font-family:"Montserrat",sans-serif;padding:.685rem;background:transparent;letter-spacing:-1px;-webkit-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out}
 .more-link:after{content:"	\2192";text-decoration:none !important;font-size:1em}
 .platform-list{margin:1rem 0 3.41rem 0;float:left;width:100%}
-.platform-list p{display:inline-block;margin-top:0 !important;margin-bottom:1.35rem !important}
-.platform-list ul{list-style:none;padding-left:0;margin-top:0;display:block;margin:0 auto;text-align:center}
-.platform-list ul li{display:inline-block;width:70px;margin-bottom:15px}
+.platform-list p{display:inline-block !important;width:auto !important;margin-top:0 !important;margin-bottom:1.35rem !important}
+.platform-list ul{list-style:none;padding-left:0;margin-top:0;display:block;margin:0 auto;text-align:center;margin-top:30px}
+.platform-list ul li{display:inline-block;width:80px;margin-bottom:15px}
 .platform-list ul li .flip-container{margin:0 auto;float:none}
 .platform-list ul li:last-child{margin-right:0}
 .platform-list ul img{margin:0;width:50px}
@@ -595,7 +595,7 @@ p,address{line-height:var(--step-up-2);font-size:var(--step-up-2)}
 .home #nav-toggle{top:154px}
 .home-container{margin-top:3.41rem;margin-bottom:6.85rem}
 .intro-hero .intro-hero__title{margin-top:3.41rem}
-.intro-hero .intro-hero__title p{font-size:var(--step-up-5);line-height:var(--step-up-3);float:left}
+.intro-hero .intro-hero__title p{font-size:var(--step-up-5);line-height:var(--step-up-3);float:left;width:91.4285714286%;float:left;margin-right:2.8571428571%;letter-spacing:-0.3px}
 .intro-hero img{display:block}
 .intro-hero:after{display:block}
 .intro-hero__container{margin-bottom:0}

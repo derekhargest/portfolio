@@ -72,7 +72,8 @@
   float: left;
   width: 100%;
   p{
-    display: inline-block;
+    display: inline-block !important;
+    width: auto !important;
     margin-top: 0 !important;
     margin-bottom: $spacing-1 !important;
   }
@@ -83,9 +84,10 @@
     display: block;
     margin: 0 auto;
     text-align: center;
+    margin-top: 30px;
     li{
       display: inline-block;
-      width: 70px;
+      width: 80px;
       margin-bottom: 15px;
       .flip-container{
         margin: 0 auto;
@@ -246,6 +248,8 @@
       font-size: var(--step-up-5);
       line-height: var(--step-up-3);
       float: left;
+      @include span(11 of 12);
+      letter-spacing: -0.3px;
     }
     img{
       display: block;
