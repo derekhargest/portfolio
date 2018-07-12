@@ -251,7 +251,7 @@ html.with-featherlight{overflow:hidden}
 .more-link{box-sizing:border-box;width:100%;font-size:var(--step-up-3);font-weight:900;font-family:"Montserrat",sans-serif;margin-top:1.35rem;text-align:center;display:inline-block;border:3px solid #484ab3;font-family:"Montserrat",sans-serif;padding:.685rem;background:transparent;letter-spacing:-1px;-webkit-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out}
 .more-link:after{content:"	\2192";text-decoration:none !important;font-size:1em}
 .platform-list{margin:1rem 0 3.41rem 0;float:left;width:100%}
-.platform-list p{display:inline-block !important;width:auto !important;margin-top:0 !important;margin-bottom:1.35rem !important;text-align:center}
+.platform-list p{display:inline-block !important;width:100% !important;margin-top:0 !important;margin-bottom:1.35rem !important;text-align:center}
 .platform-list ul{list-style:none;padding-left:0;margin-top:0;display:block;margin:0 auto;text-align:center;margin-top:30px}
 .platform-list ul li{display:inline-block;width:80px;margin-bottom:15px}
 .platform-list ul li .flip-container{margin:0 auto;float:none}
@@ -512,7 +512,7 @@ p,address{line-height:var(--step-up-2);font-size:var(--step-up-2)}
 }@media(min-width:720px){.footer-item{width:22.8571428571%;float:left;margin-right:2.8571428571%}
 }@media(min-width:730px){.intro-hero .intro-hero__title p{float:left}
 .platform-list{margin-bottom:0}
-.platform-list p{text-align:left}
+.platform-list p{text-align:left;width:auto !important}
 .platform-list ul{margin-top:0}
 }@media(min-width:768px){.wp-caption .wp-caption-text,.gallery-caption{font:300 1.9rem/1.7 sans-serif}
 }@media(min-width:770px){.inline-link{padding:1px 7px;border:2px solid #484ab3;margin-right:3px;background:#fef8ed;background:-webkit-linear-gradient(bottom,#fef8ed 50%,#484ab3 50%);background:linear-gradient(to top,#fef8ed 50%,#484ab3 50%);background-size:100% 203%;background-position:99% bottom;-webkit-transition:background-position .5s ease;transition:background-position .5s ease;-webkit-transition:all 200ms ease;transition:all 200ms ease;box-shadow:-5px 5px 0 rgba(72,74,179,0.5);text-decoration:none;box-sizing:border-box}
