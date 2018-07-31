@@ -23,7 +23,7 @@ img{
   display: block;
 }
 
-button, .wpcf7-submit{
+button, .nf-element[type="button"]{
   border: $border-thick;
   color: $c-primary;
   font-family: $font-stack-sans;
@@ -42,7 +42,14 @@ button, .wpcf7-submit{
   }
 }
 
-.wpcf7-text, .wpcf7-textarea{
+.nf-element[type="button"]{ font-size: var(--step-up-2) !important; }
+
+::selection {
+  color: $c-bg;
+  background: $c-secondary;
+}
+
+.ninja-forms-field, .wpcf7-textarea{
   border: 3px solid $c-primary;
   margin-top: 0;
   background: $c-bg;
@@ -62,11 +69,11 @@ button, .wpcf7-submit{
   display: block;
 }
 
-.wpcf7-form{
-  margin-top: $spacing-2;
+.ninja-forms-form-wrap{
+  margin-top: 70px;
 }
 
-.wpcf7-form p{
+.ninja-forms-form-wrap p{
   margin-bottom: $spacing-half;
 }
 
@@ -87,6 +94,14 @@ button, .wpcf7-submit{
     @include span(5 of 12);
     margin: 25px 40px 30px 0;
   }
+}
+
+.ninja-forms-req-symbol{
+  color: $c-secondary !important;
+}
+
+.nf-form-fields-required, #nf-form-title-1{
+  display: none;
 }
 
 
@@ -190,28 +205,51 @@ textarea{
 }
 
 span.wpcf7-not-valid-tip{
-  color: $c-secondary;
+  
   font-size: var(--step-down-2);
   font-weight: 600;
   margin-top: $spacing-1;
 }
 
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
+.nf-error-msg{
   border: $c-primary 3px solid;
   font-family: $font-stack-sans;
-  color: $c-primary;
+  color: $c-secondary !important;
   font-weight: 600;
-  padding: 15px;
+  padding: 0px 15px 18px 15px;
+  padding-top: 0px;
   letter-spacing: -.05em;
   text-align: center;
   margin-left: 0;
+  position: relative;
   &:before{
     content: "!";
-    display: block;
     font-size: 45px;
     font-weight: 900;
     color: $c-secondary;
-    margin: 0 0 10px 0;
+    margin: 0 10px 10px 0;
+    position: relative;
+    top: 10px;
+  }
+}
+
+.nf-error .ninja-forms-field{
+  border: 3px solid $c-secondary !important;
+}
+
+.nf-after-field .nf-error-msg{
+  margin-right: 0 !important;
+}
+
+.nf-after-form-content .nf-error-msg:before{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.nf-field-label{
+  label{
+   font-size: var(--step-up-3) !important;
+   font-weight: 800 !important;
   }
 }
 
@@ -224,6 +262,24 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing{
     margin: 0 auto;
     float: none;
     margin: 45px auto;
+  }
+}
+
+.more-link-text{
+  font-family: $font-stack-serif;
+  font-size: var(--step-up-1);
+  font-weight: 600;
+  font-style: italic;
+  float: left;
+  svg{
+    font-size: 10px;
+    line-height: 16px;
+    bottom: 2px;
+    position: relative;
+    left: 3px;
+  }
+  &:hover{
+    text-decoration: underline;
   }
 }
 
